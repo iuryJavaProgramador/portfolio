@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="portfolio" content="portfolio, serviços para software, serviços web, desenvolvimento full stack.">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Iury Godoy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta property="og:title" content="Iury Portifólio">
+    <meta property="og:description" content="Portifólio para apresentar meus projetos acadêmicos e pessoais. Página de serviços de desenvolvimento de software, front-end e back-end">
+    <meta property="og:type" content="website">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; script-src 'self' https://cdn.jsdelivr.net; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:;">
+
+    <title>Iury Portfólio</title>
+
+    <link rel="icon" href="../componentes/icons/fivecon/fivecon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="../css/fonts/fonts.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container p-4">
+          <a class="navbar-brand" href="#"><h4>Iury Rodrigues de Godoy</h4></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#home">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-house-fill mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"
+                    />
+                    <path
+                      d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
+                    />
+                  </svg>
+                  Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#about">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-fill mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                    />
+                  </svg>
+                  About
+                </a>
+              </li>
+              <li class="nav-item dropdown dmenu">
+                <a
+                  class="nav-link dropdown-toggle me-4"
+                  id="navbardrop"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-server mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4z"
+                    />
+                    <path
+                      d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.5 6.5 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8s-3.809-.317-5.208-.876a6.5 6.5 0 0 1-1.458-.79z"
+                    />
+                    <path
+                      d="M14.667 11.668a6.5 6.5 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.5 6.5 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667z"
+                    />
+                  </svg>
+                  Projects
+                </a>
+                <div
+                  class="dropdown-menu sm-menu">
+                  <a class="dropdown-item" href="#frontend">Front-end</a>
+                  <a class="dropdown-item" href="#backend">Back-end</a>
+                  <a class="dropdown-item" href="#fullstack">Full Stack</a>
+                  <a class="dropdown-item" href="#aws">AWS Infrastructure</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-stripe mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.226 5.385c-.584 0-.937.164-.937.593 0 .468.607.674 1.36.93 1.228.415 2.844.963 2.851 2.993C11.5 11.868 9.924 13 7.63 13a7.7 7.7 0 0 1-3.009-.626V9.758c.926.506 2.095.88 3.01.88.617 0 1.058-.165 1.058-.671 0-.518-.658-.755-1.453-1.041C6.026 8.49 4.5 7.94 4.5 6.11 4.5 4.165 5.988 3 8.226 3a7.3 7.3 0 0 1 2.734.505v2.583c-.838-.45-1.896-.703-2.734-.703"
+                    />
+                  </svg>
+                  Skills
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="p-5 section-home" id="home">
+      <div class="container pt-0">
+        <pre>
+          <code>
+          <span class="java-keyword">public</span> <span class="java-keyword">class</span> <span class="java-class">Portfolio {</span> 
+              <span class="java-keyword">public static void main(String[] args) {</span> 
+                  <span class="java-keyword">System</span>.<span class="java-keyword">out.println</span><span class="java-string">("Welcome to my portfolio.");
+                  }
+                }
+                  </span>    
+            </code>
+          </pre>
+      </div>
+    </section>
+
+    <section
+      class="fade-in d-flex justify-content-center align-items-center pt-5"
+      id="about"
+    >
+      <div class="text-center">
+        <img
+          class="rounded-circle profile-picture"
+          src="../componentes/img/img-profile.jpg"
+          alt="Profile picture"
+          title="Profile picture"
+        />
+        <h2 class="mt-3 title-professional text-light">
+          <span id="typed-text"></span>
+        </h2>
+        <p class="text-about text-white">
+          Sou estudante do curso de Análise e Desenvolvimento de Sistemas, pelo
+          Centro Universitário de Maringá - Unicesumar, e de Desenvolvedor Full
+          Stack Java, pela Escola Britânica de Artes Criativas e Tecnologia -
+          EBAC. Além disso, sou aluno do Programa Recode Pro AI para formação Desenvolvedor Full Stack.
+
+          <br /><br />Ser uma pessoa extremamente curiosa e interessada em
+          aprender fez com que eu descobrisse minha paixão pela tecnologia. O
+          primeiro contato com a área foi por meio da linguagem Java, e através
+          dela foi despertado meu interesse não somente pelo backend, mas também
+          pelo frontend. Atualmente, possuo conhecimentos em HTML, CSS,
+          JavaScript, JQuery, Bootstrap, Spring Boot, PostgreSQL e versionamento
+          com Git e Github.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-group-front">
+      <div class="container my-5 text-center">
+        <div class="row justify-content-center">
+          <h2 id="frontend" class="frontend-title">Front-end</h2>
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                style="height: 200px"
+                src="../componentes/img/meutime.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body" style="height: 300px">
+                <h5 class="card-title">IuryFC</h5>
+                <p class="card-text">
+                  Fiz este site com o objetivo de apresentar o meu time de
+                  futebol. O site possui informações principais sobre o time,
+                  tabela dos próximos jogos e um formulário voltado para os
+                  patrocinadores.
+                </p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">HTML</li>
+                <li class="list-group-item bg-dark text-white">CSS</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://meu-time-two.vercel.app/"
+                  target="_blank"
+                  class="card-link btn btn-outline-primary"
+                  >Link do Site</a
+                >
+                <a
+                  href="https://github.com/iuryJavaProgramador/MeuTime"
+                  class="card-link btn btn-outline-info"
+                  target="_blank"
+                  >Código fonte</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                src="../componentes/img/ebac-sports.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ebac Sports</h5>
+                <p class="card-text">
+                  Durante o treinamento com o curso da Ebac recebi uma tarefa
+                  para desenvolver uma loja virtual. O objetivo era deixar o
+                  site responsivo utilizando o displey grid,
+                  grid-template-columns, e apresentar um design atrativo.
+                </p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">HTML</li>
+                <li class="list-group-item bg-dark text-white">CSS</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://ebac-sports-dun.vercel.app/"
+                  target="_blank"
+                  class="card-link btn btn-outline-primary"
+                  >Link do Site</a
+                >
+                <a
+                  href="https://github.com/iuryJavaProgramador/EBAC-Sports"
+                  class="card-link btn btn-outline-info"
+                  target="_blank"
+                  >Código fonte</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                src="../componentes/img/game-shop.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Games Shop</h5>
+                <p class="card-text">
+                  Fiz este site durante o treinamento com a ebac para apresentar
+                  conceitos de design e explorar técnicas para alinhar imagem
+                  com texto e desenvolver formulários.
+                </p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">HTML</li>
+                <li class="list-group-item bg-dark text-white">CSS</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://site-games-shop-wine-mu.vercel.app/"
+                  target="_blank"
+                  class="card-link btn btn-outline-primary"
+                  >Link do Site</a
+                >
+                <a
+                  href="https://github.com/iuryJavaProgramador/Site_GamesShop"
+                  class="card-link btn btn-outline-info"
+                  target="_blank"
+                  >Código fonte</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                src="../componentes/img/carousel-img.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Carrossel e Cards</h5>
+                <p class="card-text">
+                  Durante o treinamento com a Ebac, desenvolvi este site que
+                  contém um carrossel de imagens, o que facilita muito a
+                  visualização de imagens, e também cards.
+                </p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">HTML</li>
+                <li class="list-group-item bg-dark text-white">CSS</li>
+                <li class="list-group-item bg-dark text-white">Bootstrap</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://carousel-images-one.vercel.app/"
+                  target="_blank"
+                  class="card-link btn btn-outline-primary"
+                  >Link do Site</a
+                >
+                <a
+                  href="https://github.com/iuryJavaProgramador/carousel-images"
+                  class="card-link btn btn-outline-info"
+                  target="_blank"
+                  >Código fonte</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                src="../componentes/img/agenda-contatos.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tabela de Contatos</h5>
+                <p class="card-text">
+                  Durante o treinamento da Ebac, recebi um desafio para
+                  desenvolver uma tabela com a função de cadastrar nome e
+                  telefone de usuário e resetar.
+                </p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">HTML</li>
+                <li class="list-group-item bg-dark text-white">CSS</li>
+                <li class="list-group-item bg-dark text-white">JavaScript</li>
+                <li class="list-group-item bg-dark text-white">JQuery</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://exercicio-tabela.vercel.app/"
+                  target="_blank"
+                  class="card-link btn btn-outline-primary"
+                  >Link do Site</a
+                >
+                <a
+                  href="https://github.com/iuryJavaProgramador/Exercicio-Tabela"
+                  class="card-link btn btn-outline-info"
+                  target="_blank"
+                  >Código fonte</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-group-back" id="backend">
+      <div class="container my-5 text-center">
+        <div class="row justify-content-center">
+          <h2 class="backend-title">Back-end</h2>
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                src="../componentes/img/backend-jogovelha.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body" style="height: 300px">
+                <h5 class="card-title">Jogo da velha</h5>
+                <p class="card-text">
+                  No meu primeiro curso de java, aprendi a desenvolver a lógica
+                  de programação por trás dos jogos utilizando a linguagem Java.
+                </p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">Java 17</li>
+                <li class="list-group-item bg-dark text-white">IntelliJ IDEA</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://github.com/iuryJavaProgramador/ExerciseInJava/blob/Exercises/aula20/Exer01JogodaVelha.java"
+                  class="card-link btn btn-outline-info"
+                  target="_blank"
+                  >Código fonte</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                src="../componentes/img/user-department.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Department</h5>
+                <p class="card-text">
+                  Esta é uma API REST que cadastra usuários e localiza-os pelo
+                  id. Dois endpoints get, sendo um para listar os usuários e um
+                  para localizar a partir do id, o método post para criar novos
+                  usuários.
+                </p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">Java 17</li>
+                <li class="list-group-item bg-dark text-white">Spring Boot</li>
+                <li class="list-group-item bg-dark text-white">H2 (SQL)</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://github.com/iuryJavaProgramador/User.Dept"
+                  class="card-link btn btn-outline-info"
+                  target="_blank"
+                  >Código fonte</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                src="../componentes/img/crud-products.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">CRUD Products</h5>
+                <p class="card-text">Projeto crud, utilizei o padrão de projeto MVC (Model-View-Controller), desenvolvi para adicionar novos produtos, recuperar produtos existentes, atualizar informações e remover produtos.</p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">Java 17</li>
+                <li class="list-group-item bg-dark text-white">Spring Boot</li>
+                <li class="list-group-item bg-dark text-white">PostgreSQL</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://github.com/iuryJavaProgramador/Curso-Spring-boot/tree/main/springboot"
+                  class="card-link btn btn-outline-info"
+                  target="_blank"
+                  >Código fonte</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+          >
+            <div class="card text-bg-dark">
+              <img
+                class="card-img-top"
+                src="../componentes/img/blog-project.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blog project</h5>
+                <p class="card-text">
+                  Sistema blog pessoal, desenvolvido para usuários cadastrarem informações pessoais. Foi implementado autenticação, ou seja, antes que o usuário realize o login será gerado um bearer token authorization para a segurança dos usuários.
+                </p>
+                <p>Logo abaixo, estão as tecnologias que foram utilizadas.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">Java 17</li>
+                <li class="list-group-item bg-dark text-white">Spring Boot</li>
+                <li class="list-group-item bg-dark text-white">Spring Security</li>
+                <li class="list-group-item bg-dark text-white">JWT</li>
+                <li class="list-group-item bg-dark text-white">PostgreSQL</li>
+                <li class="list-group-item bg-dark text-white">H2 Database</li>
+                <li class="list-group-item bg-dark text-white">JUnit</li>
+                <li class="list-group-item bg-dark text-white">Docker</li>
+                <li class="list-group-item bg-dark text-white">Swagger</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="../componentes/pdf/documentação-swagger.pdf"
+                  target="_blank" type="application/pdf"
+                  class="btn btn-outline-primary me-2">
+                Documento
+                </a>
+                <a
+                  href="https://github.com/iuryJavaProgramador/api-blog"
+                  target="_blank"
+                  class="btn btn-outline-info">
+                  Código fonte
+                </a>
+              </div>    
+            </div>
+          </div>
+          <!-- <img src="../componentes/img/tenis.teste.jfif" alt="" style="mix-blend-mode: darken;">  teste: retira o fundo -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section-group-fullstack" id="fullstack">
+      <div class="container text-center section-fullstack">
+        <div class="row justify-content-center">
+          <h2 class="fullstack mb-4">Full Stack</h2>
+          <div class="col-12 col-md-10 col-lg-6">
+            <div class="card text-bg-dark shadow-lg">
+              <img
+                class="card-img-top"
+                src="../componentes/img/img-tarefas.png"
+                alt="Imagem Card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">CRUD - Gestão de tarefas</h5>
+                <p class="card-text">
+                  Esse foi o meu primeiro projeto em que utilizei diversas tecnologias e também o primeiro deploy. O objetivo é cadastrar, editar, excluir e listar tarefas, ou como você preferir, afazeres. Trabalhei muito nos Endpoints para apresentar, de forma correta, todas as respostas HTTP. Logo abaixo, estão as tecnologias que foram utilizadas.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">Java 17</li>
+                <li class="list-group-item bg-dark text-white">Spring Boot</li>
+                <li class="list-group-item bg-dark text-white">PostgreSQL</li>
+                <li class="list-group-item bg-dark text-white">Docker</li>
+                <li class="list-group-item bg-dark text-white">HTML</li>
+                <li class="list-group-item bg-dark text-white">JavaScript</li>
+                <li class="list-group-item bg-dark text-white">Bootstrap</li>
+                <li class="list-group-item bg-dark text-white"></li>
+              </ul>
+              <div class="card-body">
+                <a
+                  href="https://aplicacao-crud.onrender.com/cadastro"
+                  target="_blank"
+                  class="btn btn-outline-primary me-2"
+                >
+                  Link do Site
+                </a>
+                <a
+                  href="https://github.com/iuryJavaProgramador/aplicacao-crud"
+                  target="_blank"
+                  class="btn btn-outline-info"
+                >
+                  Código fonte
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="clearfix container" id="aws">
+      <img src="../componentes/img/aws/aws.png" class="image-aws col-md-6 float-md-end mb-3 ms-md-3" alt="image">
+      <h5 class="text-center pb-1">Arquitetura AWS</h5>
+      <ul>
+
+        <li class="p-1">
+          Alta disponibilidade
+        </li>
+      <p>
+        Essa é uma arquitetura de alta disponibilidade e segurança baseada na AWS para hospedar uma aplicação web. 
+        Ela utiliza Global Accelerator e CloudFront para entregar conteúdo globalmente com baixa latência e proteção contra DDoS, 
+        além do Route 53 para gerenciar o DNS e redirecionar usuários para os endpoints corretos.
+      </p>
+
+        <li>
+          Segurança e Escalabilidade
+        </li>
+        <p>
+          A segurança é reforçada com IAM para controle de acessos, Security Groups para regras de firewall e proteção contra ataques como SQL Injection. 
+          A aplicação é hospedada no Amazon EC2 em uma sub-rede pública, enquanto os dados ficam no Amazon RDS em uma sub-rede privada, com backups automáticos para recuperação.
+        </p>
+
+        <li>
+          Monitoramento
+        </li>
+        <p>
+          CloudWatch e X-Ray garantem visibilidade do desempenho e identificam possíveis problemas.
+        </p>
+
+        <li>
+          Baixa Latência Global
+        </li>
+        <p>
+          Global Accelerator e CloudFront minimizam o tempo de resposta para usuários em diferentes regiões.
+        </p>
+        <div class="btn btn-outline-primary">
+          <a class="saiba-mais text-decoration-none" href="https://docs.aws.amazon.com/?nc2=h_ql_doc_do" target="_blank">Saiba mais</a>
+        </div>
+    </ul>
+  </div>
+
+    <main class="pb-4" id="skills">
+      <h2 class="text-center">Skills</h2>
+      <div class="container my-4">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="HyperText Markup Language">
+              HTML
+              <img class="mt-2" src="../componentes/icons/html.png" alt="HTML" width="50">
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="Cascading Style Sheets">
+              CSS
+              <img class="mt-2" src="../componentes/icons/css.png" alt="CSS" width="50">
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="JavaScript">
+              JavaScript
+              <img class="mt-2" src="../componentes/icons/javascript.png" width="50" alt="JavaScript">
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="Framework Bootstrap">
+              Bootstrap
+              <img class="mt-2" src="../componentes/icons/bootstrap.png" width="50" height="56" alt="Bootstrap">
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="Java Programming Language">
+              Java
+              <img class="rounded-circle mt-2" src="../componentes/icons/backend/java.png" alt="Java" width="50">
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="Spring Boot Ecosystem">
+              Spring Boot
+              <img class="rounded-circle mt-2" src="../componentes/icons/backend/springboot.png" width="50" height="50" alt="Springboot">
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="Docker for Container">
+              Docker
+              <img class="rounded-circle mt-2" src="../componentes/icons/backend/docker_919853.png" width="50" alt="Docker">
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="PostgreSQL Database">
+              PostgreSQL
+              <img class="rounded-circle mt-2" src="../componentes/icons/backend/postgresql.png" width="50" alt="PostgreSQL">
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="p-3 text-center skills-class" title="Amazon Web Services">
+              AWS
+              <img class="rounded-circle mt-2" src="../componentes/icons/backend/aws.webp" width="50" alt="AWS">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-rod">
+      <nav>
+        <a class="footer-a" href="https://www.linkedin.com/in/iury-programador/" target="_blank" title="linkedln">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+        </a>
+        <a class="footer-a" target="_blank" href="https://wa.me/5521991504497?text=Olá%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" title="whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg>
+        </a>
+        <a class="footer-a" href="https://github.com/iuryJavaProgramador" target="_blank" title="github">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+        </a>
+      </nav>
+      <p>&copy; 2024, todos os direitos reservados</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/style.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".navbar-light .dmenu").hover(
+          function () {
+            $(this).find(".sm-menu").first().stop(true, true).slideDown(150);
+          },
+          function () {
+            $(this).find(".sm-menu").first().stop(true, true).slideUp(105);
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
